@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>File Compressor and De-compressor</title>
+	<link rel="shortcut icon" href="assets/favicon.ico">
+	<link href="main.css" rel="stylesheet">
+	<script src='script.js' type="text/javascript"></script>
+</head>
+
+<body class="text-blue-900 font-sans">
+
+	<nav class="bg-blue-900 text-white py-5 px-6">
+		<div class="container mx-auto flex items-center justify-center">
+			<a class="flex items-center" href="index.html">
+				<img src="assets/img.ico" width="30" height="30" alt="txt-logo" class="mr-2" loading="lazy">
+				<span class="text-lg font-bold">Compress or De-compress text files in just 2 steps.....</span>
+			</a>
+		</div>
+	</nav>
+	
+
+	<div class="mx-[17%] py-2">
+		<div class="bg-white shadow-lg rounded-lg overflow-hidden">
+			<div class="bg-lime-400 text-center py-2 font-bold">STEP 1: UPLOAD YOUR FILE (.txt Files Only)</div>
+			<div class="flex flex-col items-center p-4" id="step1">
+				<div class="text-center">
+					<div class="flex items-center justify-center">
+					<img height="50" width="80" src="assets/upload.gif" alt="Upload" loading="lazy" class="mb-4">
+					</div>
+					<form method="post" enctype="multipart/form-data" class="inline-block" id="fileform">
+						<div class="flex items-center space-x-4">
+							<input type="file" id="uploadfile" class=" bg-cyan-500 border border-blue-900 rounded-lg text-white font-bold cursor-pointer px-4 py-2 w-64">
+							<button id="submitbtn" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-lg px-6 py-3 text-center me-2 mb-2">
+								
+							Upload ⤒
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<br>
+		<!-- Step 2 Card -->
+<div class="bg-white shadow-lg rounded-lg overflow-hidden mb-4">
+    <div class="bg-lime-400 text-center py-2 font-bold">STEP 2: SELECT ACTION</div>
+    <div class="flex flex-col items-center p-4" id="step2">
+        <div class="text-center">
+			<div class="text-center flex justify-center items-center">
+				<img height="60" width="80" src="assets/action.gif" alt="action" loading="lazy" class="mb-4">
+			</div>
+            <div class="flex items-center justify-center">
+                <button type="button" id="encode" class="mx-2 text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-lg px-6 py-3 text-center me-2 mb-2">Compress ⭳</button>
+
+                <span class="mx-10 font-bold text-2xl">or</span>
+				<button type="button" id="decode" class="text-white bg-gradient-to-br from-purple-500 to-pink-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-lg px-6 py-3 text-center me-2 mb-2">De-compress ⭳</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Step 3 Card -->
+<div class="bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="bg-lime-400 text-center py-2 font-bold">JUST RELAX</div>
+    <div class="flex flex-col items-center p-4" id="step3">
+        <div class="text-center">
+			<div class="flex items-center justify-center">
+            <img height="60" width="80" src="assets/emoji.gif" alt="emoji" loading="lazy" class="mb-4"></div>
+			<button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-base font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
+				<span class="relative px-6 py-3 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0" onclick="location.reload()">
+					Reload
+				</span>
+			</button>
+			
+			
+        </div>
+    </div>
+</div>
+
+
+	
+
+</body>
+
+</html>
+
